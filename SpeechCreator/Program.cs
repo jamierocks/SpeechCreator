@@ -16,7 +16,9 @@ namespace SpeechCreator
         {
 
             string say = args[0];
+            string volume = args[1];
 
+            speaker.Volume = Convert.ToInt32(volume);
             speaker.Speak(say);
 
         }
